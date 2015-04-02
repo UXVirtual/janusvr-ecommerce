@@ -1,0 +1,9 @@
+/composer.phar
+
+/online/web/cache/
+
+/online/setup/
+
+/online/local/media/images/
+
+/online/local/session/sess_*
