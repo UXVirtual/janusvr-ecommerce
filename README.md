@@ -6,10 +6,20 @@ Ecommerce implementation for JanusVR using Thelia 2.
 
 1.  Install Composer globally
 
+```
     curl -sS https://getcomposer.org/installer | php
     mv composer.phar /usr/local/bin/composer
+```
 
 2. `cd` to the `/online` folder and run `composer update` to download the dependencies.
+
+## Testing
+
+* Run `./scripts/launch-janusvr.command` to open up JanusVR window mode and automatically connect to the e-commerce
+store. You may wish to modify the URL it points to - by default it expects the web folder to be located in a sub-folder
+`janusvr-ecommerce/online/web/` under the root of your server. Currently this will not connect to the multiplayer server
+in order to increase performance while testing locally. You will also be able to see the JanusVR client log in the
+terminal to get more insight into errors.
 
 ## Administration
 
