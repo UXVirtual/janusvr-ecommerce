@@ -13,6 +13,8 @@ Ecommerce implementation for JanusVR using Thelia 2.
 
 2. `cd` to the `/online` folder and run `composer update` to download the dependencies.
 
+3. Run `php Thelia thelia:install` from the `/online` folder and follow the instructions to install.
+
 ## Testing
 
 * Run `./scripts/launch-janusvr.command` to open up JanusVR window mode and automatically connect to the e-commerce
