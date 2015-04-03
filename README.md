@@ -11,9 +11,12 @@ Ecommerce implementation for JanusVR using Thelia 2.
     mv composer.phar /usr/local/bin/composer
 ```
 
-2. `cd` to the `/online` folder and run `composer update` to download the dependencies.
+2.  `cd` to the `/online` folder and run `composer update` to download the dependencies.
 
-3. Run `php Thelia thelia:install` from the `/online` folder and follow the instructions to install.
+3.  Run `php Thelia thelia:install` from the `/online` folder and follow the instructions to install.
+
+4.  Log into the admin panel and go to Configuration -> System Variables. Set `active-front-template` to `janusvr` so
+    it will load the VR enabled storefront template.
 
 ## Testing
 
