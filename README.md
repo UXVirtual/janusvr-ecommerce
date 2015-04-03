@@ -40,3 +40,11 @@ You will be prompted to select a username and password which will let you access
 1.  [Download Thelia](http://thelia.net/#download) as a zip file.
 2.  Unzip the `setup` folder into the `/online` folder.
 3.  Run `php setup/import.php -b ../bootstrap.php` from the `/online` folder to import fake data.
+
+## Editing Templates
+
+### Single Product
+
+`online/templates/frontOffice/janusvr/includes/single-product.html`
+
+This template is used to display each product on the home page for the "Offers" list and in "Category" pages.
