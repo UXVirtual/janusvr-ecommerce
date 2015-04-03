@@ -43,8 +43,22 @@ You will be prompted to select a username and password which will let you access
 
 ## Editing Templates
 
+* A useful list of default template hooks are available here:
+[http://doc.thelia.net/en/documentation/modules/hooks/hooks_list.html](http://doc.thelia.net/en/documentation/modules/hooks/hooks_list.html)
+
+* You can override any module's templates by placing a template file matching the filename of the original module template
+file at `online/templates/frontOffice/janusvr/modules/MODULE_NAME/TEMPLATE_NAME.html` where `MODULE_NAME` is the name
+of the module and `TEMPLATE_NAME` is the filename of the template you are overriding.
+
 ### Single Product
 
-`online/templates/frontOffice/janusvr/includes/single-product.html`
+    online/templates/frontOffice/janusvr/includes/single-product.html
 
 This template is used to display each product on the home page for the "Offers" list and in "Category" pages.
+
+### Latest Products
+
+    online/local/modules/HookProductsNew/templates/frontOffice/default/home-body.html
+
+This template lists the latest products on the homepage. It is controlled by a module and in order to overwrite the
+template a copy of home-body.html must be placed in `online/templates/frontOffice/janusvr/modules/HookProductsNew/home-body.html`
