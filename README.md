@@ -62,3 +62,8 @@ This template is used to display each product on the home page for the "Offers" 
 
 This template lists the latest products on the homepage. It is controlled by a module and in order to overwrite the
 template a copy of home-body.html must be placed in `online/templates/frontOffice/janusvr/modules/HookProductsNew/home-body.html`
+
+### 3D Modelling for Products
+
+* When using 3D models collada DAE files are preferred. To ensure maximum compatibility the `cull_face` attribute on the
+`<Object> element must be set to `none`.

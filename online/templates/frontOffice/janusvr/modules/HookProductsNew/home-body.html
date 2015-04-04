@@ -51,10 +51,28 @@
                             </div>
                         </div>
                     </a>
+
+
                 </article><!-- /product -->
             </li>
             {/loop}
         </ul>
     </div>
 </section><!-- #products-new -->
+
+<FireBoxRoom>
+    <Room use_local_asset="room_plane">
+        {loop name="product_new" type="product" limit="4" new="yes"}
+            {$product_id=$ID}
+            {$loop_count={$LOOP_COUNT}}
+            {loop name="3dmodel_new" type="document" product="$product_id"}
+            <AssetObject id="product-{$ID}-{$loop_count}" src="{$DOCUMENT_URL}" />
+            <Object id="product-{$ID}-{$loop_count}" collision_id="product-{$ID}" locked="true" pos="{math equation='1 * l' l=$loop_count} 0 0" xdir="1 0 0" ydir="0 1 0" zdir="0 0 1" scale="1 1 1" lighting="true" cull_face="none" />
+
+            {/loop}
+        {/loop}
+    </Room>
+</FireBoxRoom>
+
+
 {/ifloop}
