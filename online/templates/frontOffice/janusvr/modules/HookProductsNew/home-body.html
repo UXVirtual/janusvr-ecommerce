@@ -67,10 +67,13 @@
             {$loop_count={$LOOP_COUNT}}
             {loop name="3dmodel_new" type="document" product="$product_id"}
             <AssetObject id="product-{$ID}-{$loop_count}" src="{$DOCUMENT_URL}" />
-            <Object id="product-{$ID}-{$loop_count}" collision_id="product-{$ID}" locked="true" pos="{math equation='1 * l' l=$loop_count} 0 0" xdir="1 0 0" ydir="0 1 0" zdir="0 0 1" scale="1 1 1" lighting="true" cull_face="none" />
+            <Object id="product-{$ID}-{$loop_count}" collision_id="product-{$ID}" locked="true" pos="{math equation='1 * l' l=$loop_count} 0.2 0" xdir="1 0 0" ydir="0 1 0" zdir="0 0 1" scale="1 1 1" lighting="true" cull_face="none" />
 
             {/loop}
         {/loop}
+
+        <Object id="cube" js_id="5" pos="2.400000 0.000000 0.000000" xdir="1.000 0.002 -0.009" ydir="-0.002 1.000 0.005" zdir="0.009 -0.005 1.000" scale="5.300000 0.200000 1.700000" collision_id="cube" />
+
     </Room>
 </FireBoxRoom>
 
